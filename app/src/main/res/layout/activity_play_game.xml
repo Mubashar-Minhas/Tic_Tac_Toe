@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlayGame">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/home"
+            android:background="@null"
+            android:id="@+id/home"
+            android:layout_gravity="right"
+           />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/status"
+            android:textSize="40dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"/>
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="320dp"
+            android:layout_height="350dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="10dp"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ask2"
+                android:layout_marginLeft="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_marginTop="5dp">
+
+                <ImageButton
+                    android:id="@+id/btn_00"
+                    android:layout_width="78dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="27dp"
+                    android:background="@null"
+                    android:scaleType="fitXY" />
+
+                <ImageButton
+                    android:id="@+id/btn_01"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    android:layout_marginTop="27dp"
+                    android:layout_marginLeft="30dp"/>
+
+                <ImageButton
+                    android:id="@+id/btn_02"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    android:layout_marginTop="27dp"
+                    android:layout_marginLeft="27dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_weight="1"
+                android:layout_marginTop="115dp">
+
+                <ImageButton
+                    android:id="@+id/btn_10"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="27dp"
+                    android:background="@null"
+                    android:scaleType="fitXY" />
+
+                <ImageButton
+                    android:id="@+id/btn_11"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    android:layout_marginTop="27dp"
+                    android:layout_marginLeft="32dp"/>
+
+                <ImageButton
+                    android:id="@+id/btn_12"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    android:layout_marginTop="27dp"
+                    android:layout_marginLeft="27dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_weight="1"
+                android:layout_marginTop="225dp">
+
+                <ImageButton
+                    android:id="@+id/btn_20"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="12dp"/>
+
+                <ImageButton
+                    android:id="@+id/btn_21"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="30dp"/>
+
+                <ImageButton
+                    android:id="@+id/btn_22"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="30dp"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/reset_button"
+            android:text="RESET"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"/>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/player1_image"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/tictactoe_x" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/player2_image"
+                android:src="@drawable/tictactoe_o"
+                android:layout_marginLeft="280dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/player1_name"
+                android:textStyle="bold"
+                android:text="Player 1"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/player2_name"
+                android:textStyle="bold"
+                android:text="Player 2"
+                android:textSize="20dp"
+                android:layout_marginLeft="210dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp">
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:layout_width="70dp"-->
+<!--                android:layout_height="40dp"-->
+<!--                android:layout_rowWeight="1"-->
+<!--                android:layout_columnWeight="1"-->
+<!--                app:cardCornerRadius="20dp"-->
+<!--                app:cardElevation="5dp">-->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/player1_points"
+                    android:textStyle="bold"
+                    android:text="0"
+                    android:layout_marginRight="10dp"
+
+                    android:layout_gravity="center_vertical|center_horizontal" />
+
+<!--            </androidx.cardview.widget.CardView>-->
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:layout_width="70dp"-->
+<!--                android:layout_height="40dp"-->
+<!--                android:layout_rowWeight="1"-->
+<!--                android:layout_columnWeight="1"-->
+<!--                app:cardCornerRadius="20dp"-->
+<!--                app:cardElevation="5dp"-->
+<!--                android:layout_marginLeft="220dp">-->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/player2_points"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="270dp"
+                    android:layout_marginRight="10dp"
+                    android:text="0"
+                    android:layout_gravity="center_vertical|center_horizontal" />
+
+<!--            </androidx.cardview.widget.CardView>-->
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
